@@ -3,7 +3,7 @@ import { useState } from 'react';
 import  {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
-
+import ContactForm from '../components/contactform';
 
 let scroll = 0;
 let wheel = 0;
@@ -103,6 +103,10 @@ const handleScroll = (e) =>{
         scrollingDirection = 1;
         wheel=1;
         scroll=1;
+        setContVis2('content0');
+        setBoxVis4('content0');
+        setBoxVis5('content0');
+        setBoxVis6('content0');
         setContVis('content');
         setBoxVis1('box1');
         setBoxVis2('box2');
@@ -205,7 +209,9 @@ const handleScroll = (e) =>{
           <a href="https://github.com/Sam-Losh"><FontAwesomeIcon icon={brands('github')} className="icon"/></a>
           </div>
           <div className={boxVis8}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut felis lacus, elementum sollicitudin pharetra venenatis, tristique in nunc. Aliquam finibus augue vel nibh ultrices lacinia. Suspendisse fermentum tortor mi, quis sollicitudin lectus ullamcorper et. Cras gravida magna eu elementum commodo. Praesent id tempus est, ut volutpat ligula.</p>
+            <p>You can reach me directly at my email: sam.losh.designs@gmail.com</p>
+            <p>Or fill out the form below! I will respond back as soon as possible.</p>
+            <ContactForm/>
           </div>
             <div className={boxVis9}>
             <a href="https://www.linkedin.com/in/sam-losh-designs/"><FontAwesomeIcon icon={brands('linkedin')} className="icon"/></a>

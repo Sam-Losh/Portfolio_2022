@@ -1,6 +1,10 @@
 *{
   font-family: 'Varela Round', sans-serif;
 }
+::placeholder{
+  color: #fff;
+  opacity: 70%;
+}
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -247,7 +251,7 @@ h4{
   z-index: 5;
   width: 12rem;
   height: 12rem;
-  background-image: url(./images/pfp.png);
+  background-image: url(./images/pfp3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -416,6 +420,10 @@ h4{
   border-radius: 20px;
 }
   .box8{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     top: 5%;
     left: .5%;
     position: absolute;
@@ -433,8 +441,14 @@ h4{
 .box8 p{
   color: #fff;
   font-size: 1rem;
-  margin: 4% 5.5% 0 5%;
+  margin: 0 5.5% 0 5%;
   line-height: 2rem;
+  opacity: 0;
+  animation: fade3 5s;
+  animation-fill-mode: forwards;
+
+}
+.box8 form{
   opacity: 0;
   animation: fade3 5s;
   animation-fill-mode: forwards;
@@ -663,6 +677,62 @@ h4{
   bottom:-8rem;
   right: -2rem;
 }
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#name{
+  background-color: rgb(0, 0, 0, 10%);
+  color: #fff;
+  width: 40rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+#email{
+  background-color: rgb(0, 0, 0, 10%);
+  color: #fff;
+  width: 40rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+#message{
+  background-color: rgb(0, 0, 0, 10%);
+  color: #fff;
+  width: 40rem;
+  height: 5rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+#submit{
+  width: 40%;
+  background-color: rgb(0, 0, 0, 10%);
+  border: 1px solid #ccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+
+#submit:hover {
+  background-color: #6353CA;
+}
+
 /* .navbar{
   width: 50%;
   height: 10%;
