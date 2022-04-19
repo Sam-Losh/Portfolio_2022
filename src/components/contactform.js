@@ -11,7 +11,7 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
-    let response = await fetch("https://kpzfntakb5.execute-api.us-east-1.amazonaws.com/dev/contact", {
+    let response = await fetch("http://samlosh.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
