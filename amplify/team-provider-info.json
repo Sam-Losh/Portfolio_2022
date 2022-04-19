@@ -10,6 +10,14 @@
       "StackName": "amplify-exserver-dev-131423",
       "StackId": "arn:aws:cloudformation:us-east-1:059683893371:stack/amplify-exserver-dev-131423/907a56c0-c00c-11ec-8617-0ab34e8cd197",
       "AmplifyAppId": "d150ba6pc75dcc"
+    },
+    "categories": {
+      "function": {
+        "mylambda": {
+          "deploymentBucketName": "amplify-exserver-dev-131423-deployment",
+          "s3Key": "amplify-builds/mylambda-2b637768684350746e76-build.zip"
+        }
+      }
     }
   }
 }
