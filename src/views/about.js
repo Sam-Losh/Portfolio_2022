@@ -4,7 +4,7 @@ import  Link from "react-router-dom";
 
 const About = () =>{
     return(
-        <h1>About?</h1>
+        <h1>APOLOGIES THIS PAGE ISN'T FINISHED YET</h1>
     )
 }
 

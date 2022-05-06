@@ -5,7 +5,7 @@ import  Link from "react-router-dom";
 const Sample = () =>{
 
     return(
-        <h1>Sample!</h1>
+        <h1>APOLOGIES THIS PAGE ISN'T FINISHED YET</h1>
     )
 }
 

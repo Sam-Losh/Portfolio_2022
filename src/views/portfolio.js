@@ -4,6 +4,7 @@ import  {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 import ContactForm from '../components/contactform';
+import samplepic from '../images/EAsample.jpg'
 
 let scroll = 0;
 let wheel = 0;
@@ -45,9 +46,9 @@ const handleScroll = (e) =>{
         wheel=1;
         scroll=1;
         setContVis('content');
-        setBoxVis1('box1');
-        setBoxVis2('box2');
-        setBoxVis3('box3');
+        setBoxVis1('box1a');
+        setBoxVis2('box2a');
+        setBoxVis3('box3a');
         setWaveAni('waves1');
         setNameFade('Title2')
         setAboutFade('Title1')
@@ -58,11 +59,9 @@ const handleScroll = (e) =>{
         scrollingDirection = 1;
         wheel=2;
         scroll = 2;
-        setContVis('content0')
-        setBoxVis1('content0')
-        setBoxVis2('content0')
-        setBoxVis3('content0')
-        setContVis2('content2')
+        setBoxVis1('box1b')
+        setBoxVis2('box2b')
+        setBoxVis3('box3b')
         setBoxVis4('box4')
         setBoxVis5('box5')
         setBoxVis6('box6')
@@ -75,11 +74,8 @@ const handleScroll = (e) =>{
       if(scroll>wheel){
         wheel=3;
         scroll = 3;
-    setContVis2('content0')
-    setBoxVis4('content0')
-    setBoxVis5('content0')
+    setBoxVis4('box4b')
     setBoxVis6('content0')
-    setContVis3('content3')
     setBoxVis7('box7')
     setBoxVis8('box8')
     setBoxVis9('box9')
@@ -103,11 +99,8 @@ const handleScroll = (e) =>{
         scrollingDirection = 1;
         wheel=1;
         scroll=1;
-        setContVis2('content0');
-        setBoxVis4('content0');
-        setBoxVis5('content0');
+        setBoxVis4('box4b');
         setBoxVis6('content0');
-        setContVis('content');
         setBoxVis1('box1');
         setBoxVis2('box2');
         setBoxVis3('box3');
@@ -122,16 +115,14 @@ const handleScroll = (e) =>{
         scrollingDirection = 1;
         wheel=2;
         scroll = 2;
-        setContVis2('content2')
         setBoxVis4('box4')
         setBoxVis5('box5')
         setBoxVis6('box6')
-        setContVis3('content0')
-        setBoxVis7('content0')
-        setBoxVis8('content0')
-        setBoxVis9('content0')
-        setBoxVis10('content0')
-        setBoxVis11('content0')
+        setBoxVis7('box7b')
+        setBoxVis8('box8b')
+        setBoxVis9('box9b')
+        setBoxVis10('box10b')
+        setBoxVis11('box11b')
         setWaveAni('waves2')
         setContactFade('Title6')
         setSampleFade('Title3')
@@ -188,24 +179,19 @@ const handleScroll = (e) =>{
           <div className={boxVis1}>
           </div>
           <div className={boxVis2}>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut felis lacus, elementum sollicitudin pharetra venenatis, tristique in nunc. Aliquam finibus augue vel nibh ultrices lacinia. Suspendisse fermentum tortor mi, quis sollicitudin lectus ullamcorper et. Cras gravida magna eu elementum commodo. Praesent id tempus est, ut volutpat ligula.</p>
+              <p>Hi, my name is Sam<span>(They/Them)</span></p> 
+              {/* Write about background */}
           </div>
           <div className={boxVis3}>
-              <p>Nunc aliquam augue vel auctor congue. Nunc euismod nisl elit, a volutpat sem tristique non. Nullam sit amet facilisis turpis, vitae tempus lectus. Aliquam luctus scelerisque sapien, non convallis urna tempor in. Ut sit amet diam enim. Phasellus nisl lacus, mollis sed ullamcorper ut, rutrum ut leo. Fusce finibus ex hendrerit, scelerisque mi in, vulputate enim. Etiam urna eros, hendrerit nec elit id, mattis sodales ligula. Morbi commodo neque sit amet finibus ultricies. Nunc cursus elit quis dolor gravida, pellentesque vehicula magna vestibulum.</p>
+              <p>Nunc aliquam augue vel auctor congue. Nunc euismod nisl elit, a volutpat sem tristique non. Nullam sit amet facilisis turpis, vitae tempus lectus. Aliquam luctus scelerisque sapien, non convallis urna tempor in. Ut sit amet diam enim. Phasellus nisl lacus, mollis sed ullamcorper ut, rutrum ut leo. Fusce finibus ex hendrerit, scelerisque mi in, vulputate enim. Etiam urna eros, hendrerit nec elit id, mattis sodales ligula. Morbi commodo neque sit amet finibus ultricies. <Link to={'/About'} id='link'>Learn More!</Link></p>
+              {/* Write about how designs wait to come alive by the designers hand */}
         </div>
-        </div>
-        <div className={contVis2}  >
-          <div className={boxVis4}>
-          </div>
-          <div className={boxVis5}>
-              <Link to={'/Sample'}><p>Learn More!</p></Link>
-          </div>
+        <img src={samplepic} className={boxVis4}/>
           <div className={boxVis6}>
-              <p>Nunc aliquam augue vel auctor congue. Nunc euismod nisl elit, a volutpat sem tristique non. Nullam sit amet facilisis turpis, vitae tempus lectus. Aliquam luctus scelerisque sapien, non convallis urna tempor in. Ut sit amet diam enim. Phasellus nisl lacus, mollis sed ullamcorper ut, rutrum ut leo. Fusce finibus ex hendrerit, scelerisque mi in, vulputate enim. Etiam urna eros, hendrerit nec elit id, mattis sodales ligula. Morbi commodo neque sit amet finibus ultricies. Nunc cursus elit quis dolor gravida, pellentesque vehicula magna vestibulum.</p>
+              <p>This is one of my most recent projects I have been working on. <Link to={'/Sample'} id='link'>Learn More!</Link></p>
+              {/* Summarize professionally, find sources to inspire off of */}
               </div>
-        </div>
-        <div className={contVis3}  >
-          <div className={boxVis7}>
+              <div className={boxVis7}>
           <a href="https://github.com/Sam-Losh"><FontAwesomeIcon icon={brands('github')} className="icon"/></a>
           </div>
           <div className={boxVis8}>

@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import Amplify from 'aws-amplify';
+import config from '../aws-exports'
+
+Amplify.configure(config);
+
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -25,7 +30,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <input type="text" id="name" required placeholder="First, Last, and company(if applicable) name"/>
+        <input type="text" id="name" required placeholder="First Name, Last Name, and Company Name(if applicable)"/>
       </div>
       <div>
         <input type="email" id="email" required placeholder="Email"/>

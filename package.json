@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "-": "0.0.1",
+    "@aws-amplify/ui-react": "^2.15.4",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -13,6 +14,7 @@
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^13.5.0",
     "async": "^3.2.3",
+    "aws-amplify": "^4.3.20",
     "axios": "^0.26.1",
     "babel-plugin-macros": "^3.1.0",
     "cors": "^2.8.5",
