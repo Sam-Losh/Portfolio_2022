@@ -9,6 +9,8 @@ import samplepic from '../images/EAsample.jpg'
 let scroll = 0;
 let wheel = 0;
 let scrollingDirection = 0;
+let y1
+let y2
 const Portfolio = () => {
   const [contVis, setContVis] = useState('content0')
   const [boxVis1, setBoxVis1] = useState('content0')
@@ -128,10 +130,10 @@ const handleScroll = (e) =>{
   }
 }
 const swipeStart = (e) =>{
-  let y1 = e.changedTouches[0].screenY;
+  y1 = e.changedTouches[0].screenY;
 }
 const swipeEnd = (e) =>{
-  let y2 = e.changedTouches[0].screenY;
+  y2 = e.changedTouches[0].screenY;
   handleTouch();
 }
 const handleTouch = () =>{
