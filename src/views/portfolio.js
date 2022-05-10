@@ -129,7 +129,7 @@ const handleScroll = (e) =>{
 }
 
   return (
-    <div className = 'Night' onWheel={handleScroll}>
+    <div className = 'Night' onWheel={handleScroll} onTouchMove={handleScroll}>
       <div className = {nameFade}>
         <h1>Sam Losh</h1>
         <h4>Web designer</h4>

@@ -1092,6 +1092,7 @@ form{
   }
 }@keyframes bubble2{
   0%{
+    visibility: visible;
     width: 8px;
     height: 8px;
     border-radius: 100%;
@@ -1110,6 +1111,7 @@ form{
     border-radius: 100%;
   }
   100%{
+    visibility: visible;
     border-radius: 25px;
     opacity: 100%;
   }
