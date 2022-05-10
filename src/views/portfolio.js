@@ -127,9 +127,104 @@ const handleScroll = (e) =>{
     }
   }
 }
+const handleTouch = (e) =>{
+  let y1 = e.touches[0].clientY
+  let y2 = e.changedTouches[0].clientY
+  if(y2 > y1 && scrollingDirection !== 1 ){
+    scroll++;
+    if(wheel === 0){
+      if(scroll > wheel){
+        scrollingDirection = 1;
+        wheel=1;
+        scroll=1;
+        setContVis('content');
+        setBoxVis1('box1a');
+        setBoxVis2('box2a');
+        setBoxVis3('box3a');
+        setWaveAni('waves1');
+        setNameFade('Title2')
+        setAboutFade('Title1')
+        change()
+      }
+    }else if(wheel === 1){
+      if(scroll>wheel){
+        scrollingDirection = 1;
+        wheel=2;
+        scroll = 2;
+        setBoxVis1('box1b')
+        setBoxVis2('box2b')
+        setBoxVis3('box3b')
+        setBoxVis4('box4')
+        setBoxVis6('box6')
+        setWaveAni('waves2')
+        setAboutFade('Title2')
+        setSampleFade('Title3')
+        change()
+      }
+    }else if(wheel === 2 || wheel === 3){
+      if(scroll>wheel){
+        wheel=3;
+        scroll = 3;
+    setBoxVis4('box4b')
+    setBoxVis6('content0')
+    setBoxVis7('box7')
+    setBoxVis8('box8')
+    setBoxVis9('box9')
+    setBoxVis10('box10')
+    setBoxVis11('box11')
+    setWaveAni('waves3')
+    setSampleFade('Title4')
+    setContactFade('Title5')
+    change()
+}}}else if(y2 < y1 && scrollingDirection !== 1){
+    if(wheel === 1){
+      scroll--;
+      if(scroll < wheel){
+        wheel=1;
+        scroll=1;
+        
+      }
+    }else if(wheel === 2){
+      scroll--;
+      if(scroll<wheel){
+        scrollingDirection = 1;
+        wheel=1;
+        scroll=1;
+        setBoxVis4('box4b');
+        setBoxVis6('content0');
+        setBoxVis1('box1');
+        setBoxVis2('box2');
+        setBoxVis3('box3');
+        setWaveAni('waves1');
+        setAboutFade('Title1')
+        setSampleFade('Title4')
+        change()
+      }
+    }else if(wheel === 3){
+      scroll--;
+      if(scroll<wheel){
+        scrollingDirection = 1;
+        wheel=2;
+        scroll = 2;
+        setBoxVis4('box4')
+        setBoxVis6('box6')
+        setBoxVis7('box7b')
+        setBoxVis8('box8b')
+        setBoxVis9('box9b')
+        setBoxVis10('box10b')
+        setBoxVis11('box11b')
+        setWaveAni('waves2')
+        setContactFade('Title6')
+        setSampleFade('Title3')
+        change()
+        
+      }
+    }
+  }
+}
 
   return (
-    <div className = 'Night' onWheel={handleScroll} onTouchMove={handleScroll}>
+    <div className = 'Night' onWheel={handleScroll} onTouchMove={handleTouch}>
       <div className = {nameFade}>
         <h1>Sam Losh</h1>
         <h4>Web designer</h4>
