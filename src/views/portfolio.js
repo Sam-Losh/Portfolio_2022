@@ -127,9 +127,14 @@ const handleScroll = (e) =>{
     }
   }
 }
-const handleTouch = (e) =>{
-  let y1 = e.touches[0].clientY
-  let y2 = e.changedTouches[0].clientY
+const swipeStart = (e) =>{
+  let y1 = e.changedTouches[0].screenY;
+}
+const swipeEnd = (e) =>{
+  let y2 = e.changedTouches[0].screenY;
+  handleTouch();
+}
+const handleTouch = () =>{
   if(y2 > y1 && scrollingDirection !== 1 ){
     scroll++;
     if(wheel === 0){
@@ -224,7 +229,7 @@ const handleTouch = (e) =>{
 }
 
   return (
-    <div className = 'Night' onWheel={handleScroll} onTouchMove={handleTouch}>
+    <div className = 'Night' onWheel={handleScroll} onTouchStart={swipeStart} onTouchEnd={swipeEnd}>
       <div className = {nameFade}>
         <h1>Sam Losh</h1>
         <h4>Web designer</h4>
