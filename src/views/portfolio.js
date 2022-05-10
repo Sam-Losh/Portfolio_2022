@@ -2,7 +2,7 @@ import * as React from "react";
 import { useState } from 'react';
 import  {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { solid, regular, brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
+import {brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
 import ContactForm from '../components/contactform';
 import samplepic from '../images/EAsample.jpg'
 
@@ -14,11 +14,8 @@ const Portfolio = () => {
   const [boxVis1, setBoxVis1] = useState('content0')
   const [boxVis2, setBoxVis2] = useState('content0')
   const [boxVis3, setBoxVis3] = useState('content0')
-  const [contVis2, setContVis2] = useState('content0')
   const [boxVis4, setBoxVis4] = useState('content0')
-  const [boxVis5, setBoxVis5] = useState('content0')
   const [boxVis6, setBoxVis6] = useState('content0')
-  const [contVis3, setContVis3] = useState('content0')
   const [boxVis7, setBoxVis7] = useState('content0')
   const [boxVis8, setBoxVis8] = useState('content0')
   const [boxVis9, setBoxVis9] = useState('content0')
@@ -38,9 +35,9 @@ const Portfolio = () => {
 
 const handleScroll = (e) =>{
   let y = e.deltaY;
-  if(y > 1 && scrollingDirection != 1 ){
+  if(y > 1 && scrollingDirection !== 1 ){
     scroll++;
-    if(wheel == 0){
+    if(wheel === 0){
       if(scroll > wheel){
         scrollingDirection = 1;
         wheel=1;
@@ -54,7 +51,7 @@ const handleScroll = (e) =>{
         setAboutFade('Title1')
         change()
       }
-    }else if(wheel == 1){
+    }else if(wheel === 1){
       if(scroll>wheel){
         scrollingDirection = 1;
         wheel=2;
@@ -63,14 +60,13 @@ const handleScroll = (e) =>{
         setBoxVis2('box2b')
         setBoxVis3('box3b')
         setBoxVis4('box4')
-        setBoxVis5('box5')
         setBoxVis6('box6')
         setWaveAni('waves2')
         setAboutFade('Title2')
         setSampleFade('Title3')
         change()
       }
-    }else if(wheel == 2 || wheel == 3){
+    }else if(wheel === 2 || wheel === 3){
       if(scroll>wheel){
         wheel=3;
         scroll = 3;
@@ -85,15 +81,15 @@ const handleScroll = (e) =>{
     setSampleFade('Title4')
     setContactFade('Title5')
     change()
-}}}else if(y < -1 && scrollingDirection != 1){
-    if(wheel == 1){
+}}}else if(y < -1 && scrollingDirection !== 1){
+    if(wheel === 1){
       scroll--;
       if(scroll < wheel){
         wheel=1;
         scroll=1;
         
       }
-    }else if(wheel == 2){
+    }else if(wheel === 2){
       scroll--;
       if(scroll<wheel){
         scrollingDirection = 1;
@@ -109,14 +105,13 @@ const handleScroll = (e) =>{
         setSampleFade('Title4')
         change()
       }
-    }else if(wheel == 3){
+    }else if(wheel === 3){
       scroll--;
       if(scroll<wheel){
         scrollingDirection = 1;
         wheel=2;
         scroll = 2;
         setBoxVis4('box4')
-        setBoxVis5('box5')
         setBoxVis6('box6')
         setBoxVis7('box7b')
         setBoxVis8('box8b')
@@ -179,16 +174,25 @@ const handleScroll = (e) =>{
           <div className={boxVis1}>
           </div>
           <div className={boxVis2}>
-              <p>Hi, my name is Sam<span>(They/Them)</span></p> 
-              {/* Write about background */}
+              <p>Hi, my name is Sam<span> (They/Them)</span> and welcome to my web design portfolio. A look into my background, I attended Bellevue University
+              for a degree in 2018, in 2020 Covid19 put me into a financial dilemma. To confront this burden I attended & graduated from a coding bootcamp known as Coding Dojo.
+              Since then I have been putting in effort to strengthen my skills in web design and it has been an exciting journey so far!</p> 
           </div>
           <div className={boxVis3}>
-              <p>Nunc aliquam augue vel auctor congue. Nunc euismod nisl elit, a volutpat sem tristique non. Nullam sit amet facilisis turpis, vitae tempus lectus. Aliquam luctus scelerisque sapien, non convallis urna tempor in. Ut sit amet diam enim. Phasellus nisl lacus, mollis sed ullamcorper ut, rutrum ut leo. Fusce finibus ex hendrerit, scelerisque mi in, vulputate enim. Etiam urna eros, hendrerit nec elit id, mattis sodales ligula. Morbi commodo neque sit amet finibus ultricies. <Link to={'/About'} id='link'>Learn More!</Link></p>
-              {/* Write about how designs wait to come alive by the designers hand */}
+              <p>Designs creates themselves, we are the medians that brings life to them using the canvas and tools of our choice.
+                Coding is one of my personal favorite ways to bring my designs to life. I love to make my designs from scratch but I won't
+                turn away help when I can recieve it. In fact most of what I create is inspired off of real life, artists, or fellow digital designers. 
+                I'm excited to start working with new clients and employers, as helping other's visions come to life is a great joy in my life. 
+                Whether thats making adjustments, creating something new, or just offering insight, I promise to make the most of what you need help with!
+                For an expanded read about me, click <Link to={'/About'} id='link'>here</Link> to learn more.</p> 
         </div>
-        <img src={samplepic} className={boxVis4}/>
+        <img src={samplepic} alt='EASample' className={boxVis4}/>
           <div className={boxVis6}>
-              <p>This is one of my most recent projects I have been working on. <Link to={'/Sample'} id='link'>Learn More!</Link></p>
+              <p>This is a brief sample of a website I am making for my client Elizabeth Acheson and her Virtual Assistant business.
+                The design was tailored to her preferred color pallette and brand identity. As of right now, production is not finished, we're currently
+                working together to maximize the user experience so her clients can have a swift easy experience. Thus, I am able to provide you this 
+                early stage design example as we finalize the product. If you want to see more details about this project and other projects I've had in the past
+                click <Link to={'/Sample'} id='link'>here</Link> to see more!</p>
               {/* Summarize professionally, find sources to inspire off of */}
               </div>
               <div className={boxVis7}>

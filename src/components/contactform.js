@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Amplify from 'aws-amplify';
-import config from '../aws-exports'
+// import Amplify from 'aws-amplify';
+// import config from '../aws-exports'
 
-Amplify.configure(config);
+// Amplify.configure(config);
 
 
 const ContactForm = () => {
@@ -28,18 +28,14 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <div id='form'>
+      <form onSubmit={handleSubmit}>
         <input type="text" id="name" required placeholder="First Name, Last Name, and Company Name(if applicable)"/>
-      </div>
-      <div>
         <input type="email" id="email" required placeholder="Email"/>
-      </div>
-      <div>
         <textarea id="message" required placeholder="Write your message here"/>
-      </div>
-      <button id="submit" type="submit">{status}</button>
-    </form>
+        <button id="submit" type="submit">{status}</button>
+      </form>
+    </div>
   );
 };
 

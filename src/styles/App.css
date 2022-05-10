@@ -202,7 +202,7 @@ h4{
   right: 1rem;
 }
 .spot1{
-  background-color: #e7e7e7;
+  background-color: #d7d7d7;
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -212,7 +212,7 @@ h4{
   right: 6rem;
 }
 .spot2{
-  background-color: #e7e7e7;
+  background-color: #d7d7d7;
   height: 25px;
   width: 25px;
   border-radius: 50%;
@@ -222,7 +222,7 @@ h4{
   right: 2.5rem;
 }
 .spot3{
-  background-color: #e7e7e7;
+  background-color: #d7d7d7;
   height: 18px;
   width: 18px;
   border-radius: 50%;
@@ -258,7 +258,7 @@ h4{
   z-index: 5;
   width: 18%;
   height: 38%;
-  background-image: url(./images/pfp3.jpg);
+  background-image: url(../images/pfp3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -275,7 +275,7 @@ h4{
   z-index: 5;
   width: 18%;
   height: 38%;
-  background-image: url(./images/pfp3.jpg);
+  background-image: url(../images/pfp3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -292,7 +292,7 @@ h4{
   z-index: 5;
   width: 18%;
   height: 38%;
-  background-image: url(./images/pfp3.jpg);
+  background-image: url(../images/pfp3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 40%;
@@ -342,28 +342,29 @@ h4{
 } 
 .box2a p{
   color: #fff;
-  font-size: 1rem;
-  margin: 4% 5.5% 0 5%;
-  line-height: 2rem;
+  margin: 2% 5.5% 1% 5%;
+  line-height: 250%;
+  font-size: calc(.5vw + .5vh + .25vmin);
   opacity: 0;
   animation: fade 5s;
   animation-fill-mode: forwards;
+  text-overflow: clip;
 }
 .box2a span{
-  font-size: .65rem;
+  font-size: calc(.35vw + .35vh + .25vmin);
   font-style: italic;
 }
 .box2 p{
   color: #fff;
-  font-size: 1rem;
-  margin: 4% 5.5% 0 5%;
-  line-height: 2rem;
+  font-size: calc(.5vw + .5vh + .25vmin);
+  margin: 2% 5.5% 0 5%;
+  line-height: 250%;
   opacity: 0;
   animation: fade 5s;
   animation-fill-mode: forwards;
 }
 .box2 span{
-  font-size: .65rem;
+  font-size: calc(.35vw + .35vh + .25vmin);
   font-style: italic;
 }
 .box3a{
@@ -405,9 +406,9 @@ h4{
 } 
 .box3a p{
   color: #fff;
-  font-size: 100%;
-  margin: 4% 5.5% 0 5%;
-  line-height: 200%;
+  font-size: calc(.5vw + .5vh + .25vmin);
+  margin: 2% 5.5% 0 5%;
+  line-height: 250%;
   opacity: 0;
   animation: fade 5s;
   animation-fill-mode: forwards;
@@ -415,9 +416,9 @@ h4{
 }
 .box3 p{
   color: #fff;
-  font-size: 100%;
-  margin: 4% 5.5% 0 5%;
-  line-height: 200%;
+  font-size: calc(.5vw + .5vh + .25vmin);
+  margin: 2% 5.5% 0 5%;
+  line-height: 250%;
   opacity: 0;
   animation: fade 5s;
   animation-fill-mode: forwards;
@@ -470,9 +471,9 @@ h4{
 } 
 .box6 p{
   color: #fff;
-  font-size: 1.5rem;
-  margin: 4% 5.5% 0 5%;
-  line-height: 2rem;
+  font-size: calc(1vw + 1vh + .25vmin);
+  margin: 2% 5.5% 0 5%;
+  line-height: 200%;
   opacity: 0;
   animation: fade2 5s;
   animation-fill-mode: forwards;
@@ -499,8 +500,24 @@ h4{
   backdrop-filter: blur(1px);
   border-radius: 20px;
 }
+.box7b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 10%);
+  position: absolute;
+  top: 5%;
+  left: 88.5%;
+  z-index: 5;
+  width: 9%;
+  height: 19%;
+  animation: popping 3s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+}
 
-  .box8{
+.box8{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -519,9 +536,26 @@ h4{
     backdrop-filter: blur(1px);
     border-radius: 20px;
 } 
+.box8b{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  top: 5%;
+  left: .5%;
+  position: absolute;
+  width: 84%;
+  height: 90%;
+  background-color: rgb(0, 0, 0, 10%);
+  margin: 0 2% 0 2%;
+  animation: popping 3s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+} 
 .box8 p{
   color: #fff;
-  font-size: 1rem;
+  font-size: calc(.65vw + .65vh + .25vmin);
   margin: 0 5.5% 0 5%;
   line-height: 2rem;
   opacity: 0;
@@ -534,6 +568,9 @@ h4{
   animation: fade3 5s;
   animation-fill-mode: forwards;
 
+}
+.box8b form{
+  visibility: hidden;
 }
 .box9{
   display: flex;
@@ -550,6 +587,22 @@ h4{
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 600ms;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+} 
+.box9b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 10%);
+  position: absolute;
+  top: 28.5%;
+  left: 88.5%;
+  z-index: 5;
+  width: 9%;
+  height: 19%;
+  animation: popping 3s;
+  animation-fill-mode: forwards;
   backdrop-filter: blur(1px);
   border-radius: 20px;
 } 
@@ -572,6 +625,22 @@ h4{
   backdrop-filter: blur(1px);
   border-radius: 20px;
 }
+.box10b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 10%);
+  position: absolute;
+  top: 52%;
+  left: 88.5%;
+  z-index: 5;
+  width: 9%;
+  height: 19%;
+  animation: popping 3s;
+  animation-fill-mode: forwards;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+}
 .box11{
   display: flex;
   justify-content: center;
@@ -587,6 +656,22 @@ h4{
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 700ms;
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+}
+.box11b{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 10%);
+  position: absolute;
+  top: 76%;
+  left: 88.5%;
+  z-index: 5;
+  width: 9%;
+  height: 19%;
+  animation: popping 3s;
+  animation-fill-mode: forwards;
   backdrop-filter: blur(1px);
   border-radius: 20px;
 }
@@ -758,6 +843,11 @@ h4{
   bottom:-8rem;
   right: -2rem;
 }
+#form{
+  display: block;
+  width: 75%;
+  height: 60%;
+}
 form{
   display: flex;
   flex-direction: column;
@@ -766,7 +856,7 @@ form{
 #name{
   background-color: rgb(0, 0, 0, 10%);
   color: #fff;
-  width: 40rem;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -777,7 +867,7 @@ form{
 #email{
   background-color: rgb(0, 0, 0, 10%);
   color: #fff;
-  width: 40rem;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -788,7 +878,7 @@ form{
 #message{
   background-color: rgb(0, 0, 0, 10%);
   color: #fff;
-  width: 40rem;
+  width: 100%;
   height: 5rem;
   padding: 12px 20px;
   margin: 8px 0;
