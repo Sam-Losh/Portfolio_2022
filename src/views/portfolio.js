@@ -3,7 +3,6 @@ import { useState } from 'react';
 import  {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {brands } from '@fortawesome/fontawesome-svg-core/import.macro' 
-import ContactForm from '../components/contactform';
 import samplepic from '../images/EAsample.jpg'
 
 let scroll = 0;
@@ -137,7 +136,7 @@ const swipeEnd = (e) =>{
   handleTouch();
 }
 const handleTouch = () =>{
-  if(y2 > y1 && scrollingDirection !== 1 ){
+  if(y2 < y1 && scrollingDirection !== 1 ){
     scroll++;
     if(wheel === 0){
       if(scroll > wheel){
@@ -183,7 +182,7 @@ const handleTouch = () =>{
     setSampleFade('Title4')
     setContactFade('Title5')
     change()
-}}}else if(y2 < y1 && scrollingDirection !== 1){
+}}}else if(y2 > y1 && scrollingDirection !== 1){
     if(wheel === 1){
       scroll--;
       if(scroll < wheel){
@@ -234,6 +233,7 @@ const handleTouch = () =>{
     <div className = 'Night' onWheel={handleScroll} onTouchStart={swipeStart} onTouchEnd={swipeEnd}>
       <div className = {nameFade}>
         <h1>Sam Losh</h1>
+        <h3>Scroll or Swipe Up To Get Started!</h3>
         <h4>Web designer</h4>
       </div>
     <div className={aboutFade}>

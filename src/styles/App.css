@@ -1,9 +1,11 @@
 *{
   font-family: 'Varela Round', sans-serif;
 }
-::placeholder{
-  color: #fff;
-  opacity: 70%;
+h3{
+  font-size: calc(1.5vw + 1.5vh + .5vmin);  width: 40vw;
+  position: absolute;
+  top: 35vh;
+  left: 28vw;
 }
 html, body {
   max-width: 100%;

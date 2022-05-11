@@ -377,6 +377,9 @@
     }
 }
 @media screen and (max-width: 450px) and (max-height:850px){
+    h3{
+        left: 22.5vw;
+    }
     .box1{
         left: 5%;
         top: 2%;
