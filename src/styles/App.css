@@ -482,39 +482,27 @@ h4{
   opacity: 1;
 }
 
-.box7{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box7 .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 5%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 15%;
   animation: bubble3 3s;
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 550ms;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
-.box7b{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box7b .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 5%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 15%;
   animation: popping 3s;
   animation-fill-mode: forwards;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
 
 .box8{
@@ -522,10 +510,11 @@ h4{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: flex-start;
     top: 5%;
     left: .5%;
     position: absolute;
-    width: 84%;
+    width: 95%;
     height: 90%;
     background-color: rgb(0, 0, 0, 10%);
     margin: 0 2% 0 2%;
@@ -541,6 +530,7 @@ h4{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: flex-start;
   top: 5%;
   left: .5%;
   position: absolute;
@@ -555,9 +545,9 @@ h4{
 } 
 .box8 p{
   color: #fff;
-  font-size: calc(.65vw + .65vh + .25vmin);
-  margin: 0 5.5% 0 5%;
-  line-height: 2rem;
+  font-size: calc(.8vw + .8vh + .3vmin);
+  margin: 5% 5.5% 0 5%;
+  line-height: 10px;
   opacity: 0;
   animation: fade3 5s;
   animation-fill-mode: forwards;
@@ -572,142 +562,74 @@ h4{
 .box8b form{
   visibility: hidden;
 }
-.box9{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box9 .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 28.5%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 35%;
   animation: bubble3 3s;
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 600ms;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 } 
-.box9b{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box9b .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 28.5%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 35%;
   animation: popping 3s;
   animation-fill-mode: forwards;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 } 
 
-.box10{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box10 .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 52%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 55%;
   animation: bubble3 3s;
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 650ms;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
-.box10b{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box10b .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 52%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 55%;
   animation: popping 3s;
   animation-fill-mode: forwards;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
-.box11{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box11 .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 76%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 75%;
   animation: bubble3 3s;
   animation-fill-mode: forwards;
   opacity: 0%;
   animation-delay: 700ms;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
-.box11b{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0, 10%);
+.box11b .icon{
+  width: 6rem;
+  height: 6rem;
+  color: #fff;
   position: absolute;
-  top: 76%;
-  left: 88.5%;
-  z-index: 5;
-  width: 9%;
-  height: 19%;
+  top: 45%;
+  left: 75%;
   animation: popping 3s;
   animation-fill-mode: forwards;
-  backdrop-filter: blur(1px);
-  border-radius: 20px;
 }
 
-.box7 .icon{
-  width: 5rem;
-  height: 5rem;
-  color: #fff;
-  opacity: 0;
-  animation: fade3 5s;
-  animation-fill-mode: forwards;
-}
-.box9 .icon{
-  width: 5rem;
-  height: 5rem;
-  color: #fff;
-  opacity: 0;
-  animation: fade3 5s;
-  animation-fill-mode: forwards;
-}
-.box10 .icon{
-  width: 5rem;
-  height: 5rem;
-  color: #fff;
-  opacity: 0;
-  animation: fade3 5s;
-  animation-fill-mode: forwards;
-}
-.box11 .icon{
-  width: 5rem;
-  height: 5rem;
-  color: #fff;
-  opacity: 0;
-  animation: fade3 5s;
-  animation-fill-mode: forwards;
-}
 .icon :hover{
   color: #6353CA;
 }

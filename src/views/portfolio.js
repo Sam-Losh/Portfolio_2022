@@ -74,8 +74,8 @@ const handleScroll = (e) =>{
         scroll = 3;
     setBoxVis4('box4b')
     setBoxVis6('content0')
-    setBoxVis7('box7')
     setBoxVis8('box8')
+    setBoxVis7('box7')
     setBoxVis9('box9')
     setBoxVis10('box10')
     setBoxVis11('box11')
@@ -115,8 +115,8 @@ const handleScroll = (e) =>{
         scroll = 2;
         setBoxVis4('box4')
         setBoxVis6('box6')
-        setBoxVis7('box7b')
         setBoxVis8('box8b')
+        setBoxVis7('box7b')
         setBoxVis9('box9b')
         setBoxVis10('box10b')
         setBoxVis11('box11b')
@@ -174,8 +174,8 @@ const handleTouch = () =>{
         scroll = 3;
     setBoxVis4('box4b')
     setBoxVis6('content0')
-    setBoxVis7('box7')
     setBoxVis8('box8')
+    setBoxVis7('box7')
     setBoxVis9('box9')
     setBoxVis10('box10')
     setBoxVis11('box11')
@@ -215,8 +215,8 @@ const handleTouch = () =>{
         scroll = 2;
         setBoxVis4('box4')
         setBoxVis6('box6')
-        setBoxVis7('box7b')
         setBoxVis8('box8b')
+        setBoxVis7('box7b')
         setBoxVis9('box9b')
         setBoxVis10('box10b')
         setBoxVis11('box11b')
@@ -297,13 +297,13 @@ const handleTouch = () =>{
                 click <Link to={'/Sample'} id='link'>here</Link> to see more!</p>
               {/* Summarize professionally, find sources to inspire off of */}
               </div>
-              <div className={boxVis7}>
-          <a href="https://github.com/Sam-Losh"><FontAwesomeIcon icon={brands('github')} className="icon"/></a>
-          </div>
           <div className={boxVis8}>
             <p>You can reach me directly at my email: sam.losh.designs@gmail.com</p>
-            <p>Or fill out the form below! I will respond back as soon as possible.</p>
-            <ContactForm/>
+            <p>Or click on one of these icons to find other ways to connect with me!</p>
+            {/* <ContactForm/> */}
+          </div>
+          <div className={boxVis7}>
+          <a href="https://github.com/Sam-Losh"><FontAwesomeIcon icon={brands('github')} className="icon"/></a>
           </div>
             <div className={boxVis9}>
             <a href="https://www.linkedin.com/in/sam-losh-designs/"><FontAwesomeIcon icon={brands('linkedin')} className="icon"/></a>
