@@ -29,14 +29,6 @@ app.use(function(req, res, next) {
 });
 
 
-/**********************
- * Example get method *
- **********************/
-
-app.get('/contact', function(req, res) {
-  const contact = ['hello', 'world']
-  res.json({success: 'get call succeed!', url: req.url});
-});
 
 app.use(cors());
 app.use(express.json());
@@ -79,7 +71,7 @@ const contactEmail = nodemailer.createTransport({
     });
   });
 
-app.listen(3000, function() {
+app.listen(www.samlosh.com, function() {
     console.log("App started")
 });
 
