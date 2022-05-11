@@ -13,8 +13,8 @@ See the License for the specific language governing permissions and limitations 
 // const bodyParser = require('body-parser')
 // const awsServerlessExpressMiddleware = require('aws-serverless-express/middleware')
 // const router = express.Router();
-// const cors = require("cors");
-// const nodemailer = require("nodemailer");
+const cors = require("cors");
+const nodemailer = require("nodemailer");
 
 // // declare a new express app
 // const app = express()
